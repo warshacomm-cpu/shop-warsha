@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { Analytics } from '@vercel/analytics/next';
 import ThemeRegistry from '@/components/shared/ThemeRegistry';
 import './globals.css';
 
@@ -20,7 +19,6 @@ export default function RootLayout({
     <html lang="it">
       <body className={inter.className}>
         <ThemeRegistry>{children}</ThemeRegistry>
-        <Analytics />
       </body>
     </html>
   );
